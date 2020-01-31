@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+.presentation, .parcours{
+	min-height: 100vh;
+}
+
+.presentation{
+	background-color: #feca07;
+	transition: 2s;
+}
+
+.parcours{
+	background-color: #ffffff;
+}
+
+/*Styles de la colonne de présentation --------------------------------------------------------------*/
+
+.presentation{
+	color: #404040;
+}
+
+.presentation img{
+	width:60%;
+	border-radius: 100%;
+	border: solid 5px #daaf12;
+}
+
+.bandeauPresentation{
+	background-color: #404040;
+}
+
+.bandeauPresentation h3{
+	color: #feca07;
+	font-weight: 600;
+}
+
+.presentation .contact p{
+	font-weight: 600;
+	font-size: 17px;
+}
+
+.presentation .svg{
+	color: #404040;
+	font-size: 3rem;
+}
+
+/*Styles de la colonne de parcours --------------------------------------------------------------*/
+
+h1, h3{
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 60px;
+}
+
+h2{
+	font-size:25px;
+	font-weight: 600;
+}
+
+.orange{
+	color: #feca07;
+}
+
+header .orange{
+	font-weight: 600;
+}
+
+.light{
+	font-weight: 100;
+}
+
+.orangeSou{
+	text-decoration: underline #feca07 2px;
+}
+
+#corps h4{
+	text-transform: uppercase;
+}
+
+.parcours .svg{
+	color: #feca07;
+	font-size: 2rem;
+}
+
+hr{
+	background-color: #feca07;
+	border: none;
+	height: 2px;
+}
+
+li{
+	list-style-type: none;
+}
+	
+li:not(.puceSpeciale):before{ /* Tout les <li> SAUF ceux de la classe .puceSpeciale */
+	content:"• ";
+	font-size: 25px;
+	font-weight: 900;
+	color: #feca07;
+}
+
+.puceSpeciale{
+	list-style-image: url(puce.png);
+	margin-left: 25px;
+}
+
+.detailsRecommendations h5{
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.detailsRecommendations .gras{
+	font-weight: 600;
+}
+
+/*Responsive ---------------------------------------------------------------*/
+
+@media screen and (max-width: 450px) {
+	.parcours h3 {
+	  font-size:20px;
+	}
+
+	.parcours h4 {
+		font-size:15px;
+		font-weight:bold;
+	}
+  }
