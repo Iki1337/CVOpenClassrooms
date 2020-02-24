@@ -73,7 +73,7 @@ header .orange{
 }
 
 .orangeSou{
-	text-decoration: underline #feca07 2px;
+	border-bottom: solid 2px #feca07;
 }
 
 #corps h4{
